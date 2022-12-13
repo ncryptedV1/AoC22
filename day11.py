@@ -35,7 +35,8 @@ for lines_idx in range(0, len(lines), 7):
 monkey_count = len(monkey_items)
 inspect_count = [0 for _ in range(monkey_count)]
 rounds = 10_000
-# items idx: dict -> mod_nr: (op_idx, res)
+# items_idx: dict
+# -> mod_nr: (op_idx, res)
 mod_cache = {idx: {} for idx in range(len(items_list))}
 
 
